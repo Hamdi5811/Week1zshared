@@ -3,13 +3,22 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("hello");
-        int[] weather = {1,2,3,4};
-        double avg = weather[0]+weather[1];
-//calculate avg
-        System.out.println(avg);
+        int[] weather = {32,25,27,40,45};
+        int zipCode = 43215;
+        String cityName = "columbus";
+        System.out.println("City: " + cityName);
+        System.out.println("Zip Code: " + zipCode);
+        double sum = 0;
 
+        for (int i = 0; i < weather.length; i++) {
+            sum += weather[i];
+        }
 
-        System.out.println(weather);
-
+        System.out.println(sum/ weather.length);
     }
+
+
+
+//pushed this time
+
 }
